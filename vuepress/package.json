@@ -8,5 +8,8 @@
     "docs:clean-dev": "vuepress dev theme-hope --no-cache",
     "docs:dev": "vuepress dev theme-hope",
     "docs:eject-theme": "vuepress eject-hope theme-hope"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }
