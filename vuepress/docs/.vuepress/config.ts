@@ -1,5 +1,5 @@
-import { defineUserConfig } from 'vuepress';
-import type { DefaultThemeOptions } from 'vuepress';
+// import { defineUserConfig } from 'vuepress';
+// import type { DefaultThemeOptions } from 'vuepress';
 import theme from 'vuepress-theme-hope';
 
 export default theme.config({});
