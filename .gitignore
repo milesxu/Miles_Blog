@@ -106,3 +106,5 @@ dist
 # vuepress
 .temp
 .cache
+.vitepress/cache
+.vitepress/dist
