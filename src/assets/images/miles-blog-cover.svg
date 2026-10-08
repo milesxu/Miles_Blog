@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Miles Xu Blog</title>
+  <desc id="desc">A dark blue abstract cover with a bright engineering frontier.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07101f" />
+      <stop offset="0.58" stop-color="#111b3a" />
+      <stop offset="1" stop-color="#312e81" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0.74" cy="0.2" r="0.72">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="0.42" stop-color="#818cf8" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#818cf8" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" fill="none" stroke="#bae6fd" stroke-opacity="0.11" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <path d="M -40 520 C 220 420 310 540 520 420 S 860 180 1240 250" fill="none" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="3" />
+  <path d="M -40 555 C 220 455 310 575 520 455 S 860 215 1240 285" fill="none" stroke="#818cf8" stroke-opacity="0.32" stroke-width="2" />
+  <circle cx="878" cy="160" r="7" fill="#bae6fd" />
+  <circle cx="878" cy="160" r="22" fill="none" stroke="#bae6fd" stroke-opacity="0.32" />
+  <text x="600" y="112" text-anchor="middle" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">MILES XU BLOG</text>
+  <text x="600" y="490" text-anchor="middle" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700">Engineering frontier</text>
+  <text x="600" y="536" text-anchor="middle" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="18">Systems · performance · reproducible ideas</text>
+</svg>

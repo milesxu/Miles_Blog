@@ -1,0 +1,63 @@
+site:
+  name: Miles Xu Blog
+  site: https://blog.milesxu.com
+  base: /
+  trailingSlash: false
+  googleSiteVerificationId: ''
+
+metadata:
+  title:
+    default: Miles Xu Blog
+    template: '%s — Miles Xu Blog'
+  description: 'Technical notes and essays by Miles Xu about systems, GPU engineering, Rust, agents and reproducible experiments.'
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: Miles Xu Blog
+    type: website
+  twitter:
+    cardType: summary_large_image
+
+i18n:
+  language: en
+  textDirection: ltr
+
+apps:
+  blog:
+    isEnabled: true
+    postsPerPage: 8
+    isRelatedPostsEnabled: true
+    relatedPostsCount: 4
+    post:
+      isEnabled: true
+      permalink: '/%slug%'
+      robots:
+        index: true
+        follow: true
+    list:
+      isEnabled: true
+      pathname: blog
+      robots:
+        index: true
+        follow: true
+    category:
+      isEnabled: true
+      pathname: category
+      robots:
+        index: true
+        follow: true
+    tag:
+      isEnabled: true
+      pathname: tag
+      robots:
+        index: false
+        follow: true
+
+analytics:
+  vendors:
+    googleAnalytics:
+      id: null
+
+ui:
+  theme: dark

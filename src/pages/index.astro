@@ -1,0 +1,54 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { getBlogPermalink, getPermalink } from '~/utils/permalinks';
+
+const metadata = {
+  title: 'Miles Xu Blog',
+  ignoreTitleTemplate: true,
+  description: 'Technical notes and essays by Miles Xu.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: getPermalink('/') },
+        { text: 'Archive', href: getBlogPermalink() },
+        { text: 'Miles Portal', href: 'https://milesxu.com', target: '_blank' },
+        { text: 'GitHub', href: 'https://github.com/milesxu', target: '_blank' },
+      ]}
+      actions={[{ text: 'About me', href: 'https://milesxu.com/about', target: '_blank' }]}
+      isSticky
+      showRssFeed
+      showToggleTheme
+    />
+  </Fragment>
+
+  <Hero tagline="Miles Xu Blog">
+    <Fragment slot="title">
+      Notes from the <span class="text-accent dark:text-white">engineering frontier.</span>
+    </Fragment>
+    <Fragment slot="subtitle">
+      Essays and experiments about systems, performance, GPU engineering, Rust, agents and reproducible software.
+    </Fragment>
+  </Hero>
+
+  <BlogLatestPosts
+    id="latest"
+    title="Latest writing"
+    information="The first articles are being prepared. This site will grow from small, evidence-backed notes."
+    count={6}
+  />
+
+  <CallToAction
+    tagline="More about the author"
+    title="Visit the personal site"
+    subtitle="Projects, applications and a short introduction live at milesxu.com."
+    actions={[{ variant: 'primary', text: 'Open Miles Portal', href: 'https://milesxu.com', target: '_blank' }]}
+  />
+</Layout>

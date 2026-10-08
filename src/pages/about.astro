@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import Content from '~/components/widgets/Content.astro';
+import { getBlogPermalink, getPermalink } from '~/utils/permalinks';
+
+const metadata = {
+  title: 'About this blog',
+  description: 'About the editorial direction of Miles Xu Blog.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: getPermalink('/') },
+        { text: 'Archive', href: getBlogPermalink() },
+        { text: 'Miles Portal', href: 'https://milesxu.com', target: '_blank' },
+      ]}
+      actions={[{ text: 'About me', href: 'https://milesxu.com/about', target: '_blank' }]}
+      isSticky
+      showRssFeed
+      showToggleTheme
+    />
+  </Fragment>
+
+  <Content title="About this blog" tagline="A public notebook">
+    <Fragment slot="content">
+      <p>
+        This blog is a place for technical explanations, reproducible experiments and lessons that can be shared without
+        exposing private project details.
+      </p>
+      <p class="mt-4">
+        Topics will include short-iteration performance methodology, GPU and AI systems, Rust tooling, verification, and
+        the boundaries between generated output and trustworthy evidence.
+      </p>
+    </Fragment>
+  </Content>
+</Layout>

@@ -108,3 +108,10 @@ dist
 .cache
 .vitepress/cache
 .vitepress/dist
+
+dist/
+.output/
+.astro
+.env.production
+pnpm-lock.yaml
+pnpm-workspace.yaml

@@ -1,0 +1,24 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  },
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": [
+    "dist/",
+    ".astro/",
+    ".vitepress/",
+    "index.md",
+    "api-examples.md",
+    "markdown-examples.md",
+    "src/App.vue",
+    "src/main.ts",
+    "src/style.css",
+    "src/vite-env.d.ts",
+    "vite.config.ts"
+  ]
+}

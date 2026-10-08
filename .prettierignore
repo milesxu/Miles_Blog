@@ -1,0 +1,10 @@
+dist
+node_modules
+.github
+.changeset
+
+# Legacy VitePress files retained during the Astro migration.
+.vitepress/
+api-examples.md
+index.md
+markdown-examples.md
